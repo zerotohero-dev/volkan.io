@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Volkan Özçelik</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="About Volkan Özçelik; who I am and the cool stuff I do." />
+    <meta name="keywords" content="Volkan, Volkan Özçelik, developer, front-end, portfolio" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
+
+    <script src="js/js.js"></script>
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#portfolio">What I Do</a></li>
+        <li><a href="#contact">Find Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper wrapper-style1 wrapper-first">
+    <article class="container" id="top">
+    <div class="row">
+        <div class="4u">
+        <span class="me image image-full"><img src="images/me.jpg"
+        alt="Photo of Volkan Özçelik" title=""></span>
+        </div>
+        <div class="8u">
+            <header>
+            <h1>Hi! I'm <strong>Volkan Özçelik</strong>;</h1>
+            <span><em>Jack of all Trades, Samurai of
+            <strong>JavaScript</strong></em>.</span>
+            </header>
+
+            <p>I've been creating <strong>mobile</strong> and
+            <strong>web</strong> front-ends, since 2003;<br>
+            and this is the place where I brag about all the cool
+            stuff I do.<br>
+
+            I love to architect <strong>responsive</strong> and
+            <strong>intuitive</strong> <abbr title="User Interface"
+            >UI</abbr>,<br>
+            driven by well-organized <strong>JavaScript</strong>.<br>
+
+            I'm a <strong>Mobile Software Engineer</strong> at
+            <a href="http://jivesoftware.com">Jive Software</a>.<br>
+
+            I live in <strong>Mountain View, CA</strong>;
+            I work at <strong>Palo Alto</strong>.</p>
+
+            <a href="#portfolio" class="button button-big">Find More
+            About Me &raquo;&raquo;</a>
+        </div>
+    </div>
+    </article>
+    </div>
+
+    <div class="wrapper wrapper-style3" id="portfolio">
+    <article id="portfolio">
+    <header>
+    <h2>What I Do</h2>
+    <span><br><em><br>
+            I have not created this section yet,<br> 
+            and since I plan to rewrite this website, so I won't be creating this section for a while  either <strong>;)</strong>.
+            <br>In the meantime&hellip;
+            <br>you can <a href="http://o2js.com/interview-questions">read my book about <strong>JavaScript Interviews</a>
+                <br>and <a href="https://github.com/v0lkan">see my github</a> for more up-to-date projects<br>
+                or <a href="http://o2js.com">read my technical blog</a>.</em>
+    </header>
+
+   </article>
+    </div>
+
+    <div class="wrapper wrapper-style4 findmeon">
+    <article class="row row-special"  id="contact">
+    <div class="12u">
+    <h3>Find me on &hellip;</h3>
+    <ul class="social">
+    <li class="linkedin"><a
+    href="https://linkedin.com/in/volkanozcelik"
+    class="icon icon-linkedin"><span>LinkedIn</span></a></li>
+    <li class="github"><a
+    href="https://github.com/v0lkan"
+    class="icon icon-github"><span>Github</span></a></li>
+    <li class="twitter"><a
+    href="https://twitter.com/linkibol"
+    class="icon icon-twitter"><span>Twitter</span></a></li>
+    <li class="facebook"><a
+    href="https://facebook.com/linkibol"
+    class="icon icon-facebook"><span>Facebook</span></a></li>
+    </ul>
+    </div>
+    </article>
+
+    <footer>
+    <p id="copyright">
+    2013 &copy;
+    <strong><a href="http://volkan.io">Volkan Özçelik</a></strong>
+    </p>
+    </footer>
+    </div>
+</body>
+</html>
