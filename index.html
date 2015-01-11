@@ -1,61 +1,113 @@
-<doctype html>
+<!doctype html>
 <html>
     <head>
         <title>Volkan Özçelik</title>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="description" content="About Volkan Özçelik; who I am and the cool stuff I do." />
-        <meta name="keywords" content="Volkan, Volkan Özçelik, developer, front-end, portfolio" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" >
-        <style>
-            body {font-family: 'Open Sans', sans-serif; line-height: 1.85em;color: #888;font-weight: 300;background: #fdf6e3;}
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-            h1 {color: #bfa255;margin: 0 0 0.5em 0;font-size: 3.25em;line-height: 1.2em;letter-spacing:-0.025em;font-weight:normal;}
-            p  {color: #657b83;font-size: 1.5em;line-height: 1.75em;margin: 0;margin-bottom:1.5em;}
+    	<!--
+    		Dear source code reader,
 
-            strong {color: #888;font-weight: normal;}
+    		Thank you very much for diving in.
 
-            a                       {color: #3B95C6;}
-            a:hover                 {text-decoration: none;}
-            a strong                {color: #3B95C6;}
-            a:hover, a:hover strong {color: #ff6d42 !important;}
+    		You are either stealing a CSS transition effect, or a layout feature on this page [1],
+    		or you are someone interested in how I organize my markup [2].
 
-            ul, dl     {margin-top: -1.5em;margin-bottom: 2.5em;margin-left: 2em;padding-left: 0;}
-            li, dt, dd {margin-left: 0;display:block;font-size: 1.5em;line-height: 1.25em;margin-bottom:1em;}
-            li a, dt a {display: block;}
-            dt         {margin-bottom:0;}
-            dd         {margin-left:2em;font-style: italic;font-size:1em;}
+    		For [1]: 
+    			Dude, go ahead use the code as if it's yours. I would appreciate if you
+    			send me a "thank you e-mail" (to me@volkan.io), so that we can get in touch with
+    			each other as two web professionals.
 
-            blockquote {font-style:italic;font-size:1.2em;margin-top:-1em;margin-left:1.5em;line-height:1.55em;border-left:2px #bfa255 solid;padding-left:1em;}
+    		For [2]: 
+    			Aside from the web font that I use, I have inlined all the css code. Since there's
+    			not much of a CSS, it made sense, because it was decreasing the time spent on the
+    			critical rendering path.
 
-            aside     {width: 19.5em;height: 19.5em;margin: 0 auto;border-radius: 50%;overflow: hidden; display:block;}
+    		Oh, and there's no JavaScript on this page (except for Google analytics), all the
+    		transitions are CSS transitions, and can be seen in any browser that does not suck.
+
+    		The layout is kind-of responsive; meaning: I did not spend a hell lot of time to
+    		optimize the experience in mobile user agents. However the content is still readable,
+    		and looks adequately decent in mobile browsers.
+
+    		Oh and there's an option [3]: You are a decision-maker, or a rare breed of
+    		recruiter with technical knowledge, and curiosity, wanting to "read the source"
+    		before walking the talk. Well, then I am confident in my knowledge, skills, and
+    		abilities; and my friends consider me a cunning hacker, and a fast learner.
+
+        		I love hacking, and I love paying attention to seemingly invisible things.
+
+    		At any rate, if you are interested enough to read the source, then we definitely
+    		should touch base.
+
+    		Oh... For the standardistas out there:
+
+        		Last time I checked this document was valid HTML5 + ARIA + SVG 1.1 + MathML 2.0.
+
+    		However, since those standards change regularly, and there still is debate between
+    		organizations, and domain experts on things like how to semantically structure the 
+    		document, whether we should use H1 tags all around, or show sympathy to screen readers 
+    		and use H1..H6 tags as we had used before, etc...
+
+    		I mean, I might not be doing the right thing, and I would love to have your ideas,
+    		opinions, and suggestions about how to make this markup better.
+
+    		I, myself, am a performance freak, so I'd truly appreciate any suggestion about
+    		how to make this web page better, and faster.
+
+    		With respect,
+    		Volkan.
+    	  -->
+
+        <meta name="description" content="About Volkan Özçelik; who I am and the cool stuff I do.">
+        <meta name="keywords" content="Volkan, Volkan Özçelik, developer, public speaker, front-end, JavaScript">
+
+		<link href="//cloud.webtype.com/css/1fa83ac3-90eb-426f-8d4c-496c082fce54.css" rel="stylesheet" type="text/css">
+
+		<style>
+        	body {font-family: "Apres RE", Georgia, serif;line-height: 1.85em;color: #444;background: #fefefe url(http://bg.o2js.com/);}
+
+            h1, h2 {font-family:"MVB Calliope", Georgia, serif;font-size: 3.25em;line-height: 1.2em;letter-spacing:-0.025em;font-weight:normal;color: #000;margin: 0 0 0.1em 0;}
+
+            p {color: #000;font-size: 1.2em;line-height: 1.75em;margin: 0 0 1.5em 0;}
+
+            strong {color: #000;}
+
+            a {color: #003DF5;}
+            a:hover {text-decoration: none;}
+            a strong {color: #003DF5;}
+            a:hover, a:hover strong {color: #003DF5 !important;}
+
+            ul, dl {margin: -1.5em 0 2.5em 2em;padding-left: 0;}
+            li, dt, dd {margin:  0 0 1em 0;display:block;font-size: 1.2em;line-height: 1.25em;}
+            dd {margin:0.5em 0 0 2em;font-style: italic;font-size:1em;line-height:1.8em;}
+			li a, dt a {display: block;}
+
+            blockquote {font-style:italic;font-size:1.0em;margin:-1em 0 0 1.2em;line-height:1.55em;border-left:2px #FFCC33 solid;padding-left:1em;}
+
+            aside {width: 19.5em;height: 19.5em;margin: 0 auto;border-radius: 50%;overflow: hidden;display:block;}
             aside img {display: block;width: 100%;}
 
             header h1 {margin-bottom:0;}
-            header p  {margin-top: 0.1em;font-size: 1.2em;text-align: left;margin-bottom: 2em;}
+            header p  {margin-top: 0.1em 0 2em 0;font-size: 1.2em;text-align: left;}
 
-            footer      {text-align: right;float: left;width: 100%;margin: 1em 0;}
+            footer {text-align: center;float: left;width: 100%;margin: 1em 0;}
             footer span {display: block;padding-right: 2em;}
-
-            #Main:hover p        {color: #758b93;}
-            #Main:hover strong   {color: #d33682; font-weight: normal;}
-            #Main:hover a strong {color: #3B95C6;}
 
             .pushdown {margin-top:1em;}
 
-            #Meta        {width: 32%;float:left;min-width: 350px;}
-            #Main        {width: 65%;min-height: 600px;max-width: 750px;float:left;}
-            #Main, #Meta {margin-top:2em;}
+            #Meta {margin-top: 2em;width: 32%;float:left;min-width: 350px;}
+            #Main {margin-top: 2em;width: 65%;min-height: 600px;max-width: 750px;float:left;}
+
+            #Main header, #Main footer, #Main section, #Main nav  {padding:1em;background:#fff;opacity:0.65;webkit-transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);-o-transform: matrix(1, -0.085, 0, 1, 0, 0) translate3d(0,0,1px);-moz-transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);-ms-transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);}
 
             @media (max-width: 1050px) {
-                #Meta       {float: none;margin: 0 auto;width:65%;padding-bottom: 2em;padding-top: 1.2em;}
+                #Meta {float: none;margin: 0 auto;width:65%;padding-bottom: 2em;padding-top: 1.2em;}
                 #Meta aside {margin: 0;}
-
                 #Main {margin: 0 auto;float:none;}
             }
 
             @media (max-width: 800px) {
                 #Meta {padding-bottom: 1em;}
-
                 #Main {width: auto;padding: 2em;}
             }
         </style>
@@ -68,112 +120,127 @@
           ga('create', 'UA-56512-13', 'volkan.io');
           ga('send', 'pageview');
         </script>
-    </head>
-    <body>
-        <section id="Meta">
-            <aside><img src="images/me.jpg" alt="Photo of Volkan Özçelik" title="Volkan Özçelik"></aside>
+</head>
+<body>
+    <div id="Meta">
+        <aside><img src="images/me.jpg" alt="Photo of Volkan Özçelik" title="Volkan Özçelik"></aside>
+    </div>
+
+    <article id="Main">
+        <header>
+            <h1>Hi! I&#039;m Volkan Özçelik</h1>
+            <p style="text-align:right;"><em>Jack of all Trades, Samurai of <strong>JavaScript</strong></em></p>
+        </header>
+
+        <section>
+        	<h2>About Me</h2>
+
+            <p>I&#039;ve been creating mobile and web front-ends, <strong>since 2003</strong>;<br>
+            and this is the place where I brag about all the cool stuff I do.</p>
+
+            <p>I believe in the <strong>beauty</strong> of <strong>simplicity</strong>; and I
+            love to architect <strong>responsive</strong> and <strong>intuitive</strong> user interfaces,
+            driven by amazingly well-organized <strong>JavaScript</strong> code.</p>
+
+            <p>Currently, I&#039;m a <strong>Technical Leader</strong> at <a href="http://cisco.com/">Cisco</a>;<br>
+            I live in the lovely <strong>Mountain View, CA</strong>; I work at <strong>San Francisco</strong>.</p>
         </section>
-        <article id="Main">
-            <header>
-                <h1>Hi! I&#039;m Volkan Özçelik</h1>
-                <p><em>Jack of all Trades, Samurai of <strong>JavaScript</strong>.</em></p>
-            </header>
-            <section>
-                <p>I&#039;ve been creating mobile and web front-ends, <strong>since 2003</strong>;<br>
-                and this is the place where I brag about all the cool stuff I do.</p>
 
-                <p>I believe in the <strong>beauty</strong> of <strong>simplicity</strong>; and I
-                love to architect <strong>responsive</strong> and <strong>intuitive</strong> user interfaces,
-                driven by amazingly well-organized <strong>JavaScript</strong> code.</p>
+        <section>
+            <h2>I Talk</h2>
 
-                <p>Currently, I&#039;m a <strong>Mobile Software Engineer</strong> at <a href="http://www.jivesoftware.com/">Jive Software</a>;<br>
-                I live in the lovely <strong>Mountain View, CA</strong>; and I work at <strong>Palo Alto</strong>.</p>
-            </section>
-            <section>
-                <h1>I Write</h1>
-                <p>I have a book about <strong><a href="http://o2js.com/interview-questions">JavaScript Interview Questions</a></strong>;
-                and here is its story:</p>
+            <p>I love to talk about&hellip;</p>
 
-                <blockquote>In the last couple of years I have been to at least a hundred technical
-                interviews on <strong>JavaScript Engineering</strong>,
-                <strong>Front-End Development</strong>, and related positions.
-                So, rather than giving some HR Manager&#039;s perspective on what
-                interviews should look like, I wanted to hand over the reader the <strong>red pill</strong>
-                and tell what the <strong>JavaScript Engineering</strong> interviews <strong>really are</strong>.
-                </blockquote>
+            <ul>
+            <li><strong>JavaScript Engineering</strong>;</li>
+            <li>Web Application <strong>Performance</strong> and <strong>Speed</strong>;</li>
+            <li>And <strong>Web Application Development</strong> Best Practices.</li>
+            </ul>
 
-                <ul class="pushdown" >
-                <li><a href="http://o2js.com/interview-questions/">learn more about my journey &raquo;&raquo;</a></li>
-                </ul>
-                <p>I also have a mostly <strong>JavaScript</strong>-related technical blog <a href="http://o2js.com"><strong>o2js.com</strong></a> that I regularly update.</p>
+            <p>If you are interested <a href="mailto:volkan@o2js.com">just shoot me an email</a>.<br>
+            I am highly motivated:<br>
+            I can talk for three slices of pizza, and some beer <strong>;)</strong>.</p>
 
-                <ul class="pushdown" >
-                <li><a href="http://o2js.com/">read my blog &raquo;&raquo;</a></li>
-                </ul>
+        </section>
 
-                <p>Oh, by the way, <a href="http://github.com/v0lkan/o2.js">o2.js</a> is a
-                <strong>JavaScript Framework</strong> that I have been maintaining as a side project,
-                along with my <a href="http://github.com/v0lkan">many other side projects</a>.</p>
-	    </section>
-            <section>
-                <h1>I Talk</h1>
+        <section>
+            <h2>My Talks</h2>
 
-                <p>I love to talk about&hellip;</p>
+            <p>Here are some of the talks I&#039;ve given so far:</p>
 
-                <ul>
-                <li><strong>JavaScript Engineering</strong>;</li>
-                <li>Web Application <strong>Performance</strong> and <strong>Speed</strong>;</li>
-                <li>And <strong>Web Application Development</strong> Best Practices.</li>
-                </ul>
+            <dl>
+            <dt><a href="https://speakerdeck.com/volkan/the-secrets-of-high-performance-mobile-javascript-applications">The Secrets of <strong>High Performance</strong><br>
+             Mobile <strong>JavaScript</strong> Applications &raquo;&raquo;</a></dt>
+            <dd>Learn the rules like a pro, so that you can break them like an artist <strong>;)</strong><br>
+            My talk on <strong>mobile performance</strong> at <a href="http://html5devconf.com"><strong>#html5devconf</strong> 2014</a>.<br>
+            You may want to
+            <a href="https://thenewcircle.com/s/post/1658/the_secrets_of_high_performance_mobile_javascript_applications">watch a more recent talk of mine</a> on the same topic<br>
+            /~from <em><a href="http://forwardjs.com"><strong>#forwardjs</strong>  2014</a></em>/;<br>
+            You can also <a href="https://github.com/v0lkan/talks/tree/master/html5devconf">download the accompanying <strong>source code</strong></a>.</dd>
 
-                <p>If you are interested <a href="mailto:volkan@o2js.com">just shoot me an email</a>.<br>
-                I am highly motivated:<br>
-                I can talk for three slices of pizza, and some beer <strong>;)</strong>.</p>
+            <dt><a href="https://speakerdeck.com/volkan/the-modern-hackers-guide-to-the-universe">The Modern Hacker&#39;s Guide to The Universe &raquo;&raquo;</a></dt>
+            <dd>Talked about a practical approach to surviving a <strong>hackathon</strong> at <a href="http://hack4good.io"><strong>#hack4good</strong> 0.5</a>.</dd>
+            <dt><a href="https://speakerdeck.com/volkan/mobile-application-performance-tips">Mobile Application Performance Tips &raquo;&raquo;</a></dt>
+            <dd>A talk that I gave at <a href="http://hack4good.io/">#hack4good 0.2</a>.</dd>
 
-                <p>Here are a group of slideshows from some of the talks I&#039;ve given so far:</p>
-
-                <dl>
-
-                <dt><a href="https://speakerdeck.com/volkan/the-secrets-of-high-performance-mobile-javascript-applications">The Secrets of <strong>High Performance</strong> Mobile <strong>JavaScript</strong> Applications</a></dt>
-                <dd>(Learn the rules like a pro, so that you can break them like an artist <strong>;)</strong><br>
-                My talk on <strong>mobile performance</strong> at <a href="http://html5devconf.com"><strong>#html5devconf</strong> 2014</a>.<br>
-                You may also want to <a href="https://www.youtube.com/watch?v=zHObLRzQ-NU">watch the video recording</a>, and <a href="https://github.com/v0lkan/talks/tree/master/html5devconf">download the accompanying <strong>source code</strong> from <strong>GitHub</strong></a>)</dd>
-
-                <dt><a href="https://speakerdeck.com/volkan/the-modern-hackers-guide-to-the-universe">The Modern Hacker&#39;s Guide to The Universe &raquo;&raquo;</a></dt>
-                <dd>(talked about a practical approach to surviving a <strong>hackathon</strong> at <a href="http://hack4good.io">#hack4good 0.5</a>)</dd>
-                <dt><a href="https://speakerdeck.com/volkan/mobile-application-performance-tips">Mobile Application Performance Tips &raquo;&raquo;</a></dt>
-                <dd>(a talk that I gave at <a href="http://hack4good.io/">#hack4good 0.2</a>)</dd>
-
-                <dt><a href="https://speakerdeck.com/volkan/efficient-javascript">Efficient JavaScript @udemy &raquo;&raquo;</a></dt>
-                <dd>(a 3-hour <strong>workshop</strong> that I&#039;ve given to
-                <strong><a href="http://udemy.com>">udemy</a></strong> engineers;<br>
-                <a href="https://github.com/v0lkan/talks/tree/master/udemy">download the accompanying <strong>source code</strong> from <strong>GitHub</strong></a>)</dd>
+            <dt><a href="https://speakerdeck.com/volkan/efficient-javascript">Efficient JavaScript @udemy &raquo;&raquo;</a></dt>
+            <dd>A 3-hour <strong>workshop</strong> that I&#039;ve given to
+            <strong><a href="http://udemy.com>">udemy</a></strong> engineers;<br>
+            <a href="https://github.com/v0lkan/talks/tree/master/udemy">download the accompanying <strong>source code</strong> from <strong>GitHub</strong></a>.</dd>
 
 
-                <dt><a href="http://o2js.com/J1V3R0Ckz/efficient-javascript/index.html">Efficient JavaScript @jive &raquo;&raquo;</a></dt>
-                <dd>(a condensed version of the above, presented at
-                <strong><a href="http://jivesoftware.com/">Jive Software</a></strong> HQ)</dd>
+            <dt><a href="http://o2js.com/J1V3R0Ckz/efficient-javascript/index.html">Efficient JavaScript @jive &raquo;&raquo;</a></dt>
+            <dd>A condensed version of the above, presented at
+            <strong><a href="http://jivesoftware.com/">Jive Software</a></strong> HQ.</dd>
 
-                <dt><a href="https://speakerdeck.com/volkan/javascript-widget-development-best-practices"
-                    >JavaScript Widget Development Best Practices &raquo;&raquo;</a></dt>
-                <dd>(a conference about widget development that I&#039;ve given at
-                    <strong><a href="http://jstanbul.org/2012/">JStanbul 2012</a></strong>)</dd>
+            <dt><a href="https://speakerdeck.com/volkan/javascript-widget-development-best-practices"
+                >JavaScript Widget Development Best Practices &raquo;&raquo;</a></dt>
+            <dd>A conference about widget development that I&#039;ve given at
+                <strong><a href="http://jstanbul.org/2012/">JStanbul 2012</a></strong>.</dd>
 
-                </dl>
-            </section>
-            <nav>
-                <h1>Other Places to Find Me&hellip;</h1>
+            </dl>
+        </section>
 
-                <ul class="pushdown">
-                <li><a href="http://o2js.com/">Read My <strong>Technical Blog</strong> &raquo;&raquo;</li>
-                <li><a href="http://github.com/v0lkan/">See My Recent Work on <strong>github</strong> &raquo;&raquo;</a></li>
-                <li><a href="http://linkedin.com/in/volkanozcelik">Contact Me on <strong>LinkedIn</strong> &raquo;&raquo;</a></li>
-                <li><a href="http://geekli.st/volkan">Geek Me on <strong>geeklist</strong> &raquo;&raquo;</a></li>
-                </ul>
-            </nav>
-        </article>
-        <footer>
-            <span>© <a href="http://o2js.com/">Volkan Özçelik</a></span>
-        </footer>
-    </body>
+        <section>
+            <h2>I Write</h2>
+
+            <p>I have a book about <strong><a href="http://o2js.com/interview-questions">JavaScript Interview Questions</a></strong>;
+            and here is its story:</p>
+
+            <blockquote>In the last couple of years I have been to at least a hundred technical
+            interviews on <strong>JavaScript Engineering</strong>,
+            <strong>Front-End Development</strong>, and related positions.
+            So, rather than giving some HR Manager&#039;s perspective on what
+            interviews should look like, I wanted to hand over the reader the <strong>red pill</strong>
+            and tell what the <strong>JavaScript Engineering</strong> interviews <strong>really are</strong>.
+            </blockquote>
+
+            <ul class="pushdown" >
+            <li><a href="http://o2js.com/interview-questions/">learn more about my journey &raquo;&raquo;</a></li>
+            </ul>
+            <p>I also have a mostly <strong>JavaScript</strong>-related technical blog <a href="http://o2js.com"><strong>o2js.com</strong></a> that I regularly update.</p>
+
+            <ul class="pushdown" >
+            <li><a href="http://o2js.com/">read my blog &raquo;&raquo;</a></li>
+            </ul>
+
+            <p>Oh, by the way, <a href="http://github.com/v0lkan/o2.js">o2.js</a> is a
+            <strong>JavaScript Framework</strong> that I have been<br>
+            maintaining as a side project,
+            along with <a href="http://github.com/v0lkan">many other side projects</a>.</p>
+        </section>
+
+        <nav>
+            <h2>Other Places to Find Me</h2>
+
+            <ul class="pushdown">
+            <li><a href="http://github.com/v0lkan/">See My Recent Work on <strong>github</strong> &raquo;&raquo;</a></li>
+            <li><a href="http://linkedin.com/in/volkanozcelik">Contact Me on <strong>LinkedIn</strong> &raquo;&raquo;</a></li>
+            <li><a href="http://geekli.st/volkan">Geek Me on <strong>geeklist</strong> &raquo;&raquo;</a></li>
+            </ul>
+        </nav>
+    </article>
+    <footer>
+    </footer>
+</body>
 </html>
