@@ -84,11 +84,22 @@
             }
 
             .flex-container {
-                display:flex;
+                display: -webkit-flex;
+                display: flex;
+
+                -webkit-flex-direction: row;
                 flex-direction: row;
+
+                -webkit-flex-wrap: wrap;
                 flex-wrap: wrap;
+
+                -webkit-justify-content: center;
                 justify-content: center;
+
+                -webkit-align-content: flex-start;
                 align-content: flex-start;
+
+                -webkit-align-items: stretch;
                 align-items: stretch;
             }
 
@@ -96,9 +107,15 @@
                 margin-top: 2em;
                 margin-bottom: 6em;
 
+                -webkit-flex-grow: 1;
                 flex-grow: 1;
+
+                -webkit-flex-shrink: 0;
                 flex-shrink: 0;
+
+                -webkit-flex-basis: 750px;
                 flex-basis: 750px;
+
                 max-width: 750px;
 
                 background:#fff;
@@ -114,18 +131,37 @@
             .flex-item-aside {
                 margin-top: 2em;
 
+                -webkit-flex-grow: 1;
                 flex-grow: 1;
+
+                -webkit-flex-shrink: 0;
                 flex-shrink: 0;
+
+                -webkit-flex-basis: 350px;
                 flex-basis: 350px;
+
                 max-width:400px;
             }
 
             @media (max-width: 800px) {
                 body {margin:0;}
 
-                .flex-container {align-contents: column;}
-                .flex-item-main {flex-basis: 98%;margin-left:0;margin-right:0;}
-                .flex-item-aside {flex-basis: 98%;}
+                .flex-container {
+                    -webkit-align-contents: column;
+                    align-contents: column;
+                }
+                .flex-item-main {
+                    -webkit-flex-basis: 98%;
+                    flex-basis: 98%;
+
+                    margin-left:0;
+                    margin-right:0;
+
+                }
+                .flex-item-aside {
+                    -webkit-flex-basis: 98%;
+                    flex-basis: 98%;
+                }
             }
         </style>
         <script>
