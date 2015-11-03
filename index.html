@@ -22,7 +22,7 @@
                 line-height: 1.2em;
                 letter-spacing:-0.025em;
                 font-weight:normal;
-                margin: 1em 0.3em 0.1em 0.3em;
+                margin: 1em 0.3em 0.1em 0.8em;
 
             }
 
@@ -119,7 +119,8 @@
                 max-width: 750px;
 
                 background:#fff;
-                opacity:0.65;
+                xopacity:0.65;
+
 
                 -webkit-transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);
                 -o-transform: matrix(1, -0.085, 0, 1, 0, 0) translate3d(0,0,1px);
@@ -127,6 +128,42 @@
                 -ms-transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);
                 transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);
             }
+
+
+.flex-item-main
+{
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+}
+.fx-item-main:before, .flex-item-xmain:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.fex-item-main:after
+{
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+
+
+
 
             .flex-item-aside {
                 margin-top: 2em;
@@ -188,12 +225,40 @@
         <section>
         	<h2>About Me</h2>
 
-            <p>I&#039;ve been creating mobile and web front-ends, <strong>since 2003</strong>;<br>
+            <p>I&#039;ve been in the industry <strong>since 2003</strong>;<br>
             and this is the place where I brag about all the cool stuff I do.</p>
 
-            <p>I believe in the <strong>beauty</strong> of <strong>simplicity</strong>; and I
-            love to architect <strong>responsive</strong> and <strong>intuitive</strong> user interfaces,
-            driven by amazingly well-organized <strong>JavaScript</strong> code.</p>
+            <p>So far, I&#039;ve created mobile and web front-ends; played with SQL/NoSQL data stores; 
+            created solutions to improve <strong>scalability</strong> and <strong>performance</strong>
+            of both front end, and also back-end systems.</p>
+
+            <blockquote>
+            <p>Some call this being a “fullstack developer”, or a “unicorn developer”. 
+            And although I love unicorns, I don&apos;t call myself as such:</p>
+
+            <blockquote>
+            <p>I am an <strong>engineeer</strong> and I solve <strong>problems</strong>. The context
+            and the location, the origin, or the nature of the problems are <strong>orthogonal</strong> 
+            to the approaches I take in solving them.</p>
+
+            <p>It is <strong>curiosity</strong>, asking the right questions, forming <strong>ideas</strong>,
+            refining those ideas based on <strong>measurements</strong> and <strong>evidence</strong>
+            is what matters.</p>
+            </blockquote>
+
+            <p>I am <strong>curious</strong> and I choose and use the right thingfor the right job.
+            &ndash; <strong>I use tools, not rules</strong> &ndash;
+            And every once in a while, I make my own tools. — That’s who I am <strong>:)</strong>.
+            </blockquote>
+
+            <p>I believe in the <strong>beauty</strong> of <strong>simplicity</strong> (<em>both in code and
+            also in design</em>); and I am a <strong>performance</strong> freak: My passion is to create
+            <strong>fast</strong>, <strong>responsive</strong>, <strong>intuitive</strong> interfaces,
+            tools, and applications that millions love and use.</p>
+
+            <blockquote>
+            <p>While doing all these, I love to write amazingly well-organized <strong>JavaScript</strong> code.</p>
+            </blockquote>
 
             <p>Currently, I&#039;m a <strong>Technical Lead</strong> at <a href="http://cisco.com/">Cisco</a>;<br>
             I live in the lovely <strong>Mountain View, CA</strong>; I work at <strong>San Francisco</strong>.</p>
@@ -222,7 +287,7 @@
             <p>Here are some of the talks I&#039;ve given so far:</p>
 
             <dl>
-            <dt><a href="https://speakerdeck.com/volkan/scaling-your-node-dot-js-api-like-a-boss">Scaling Your Node.JS API Like a Boss &raquo;&raquo;</a></dt>
+            <dt><a href="https://speakerdeck.com/volkan/scaling-your-node-dot-js-api-like-a-boss">Scaling Your Node.JS API <strong>Like a Boss</strong> &raquo;&raquo;</a></dt>
             <dd>You would not want your service to be unusable at precisely the wrong time<br>
                 — while everyone is watching — would you? <strong>;)</strong><br>
             My talk on <strong>Node.JS</strong>, <strong>performance</strong>, <strong>scalability</strong>, <strong>complexity</strong>,<br>
@@ -294,7 +359,6 @@
             <ul class="pushdown">
             <li><a href="http://github.com/v0lkan/">See My Recent Work on <strong>github</strong> &raquo;&raquo;</a></li>
             <li><a href="http://linkedin.com/in/volkanozcelik">Contact Me on <strong>LinkedIn</strong> &raquo;&raquo;</a></li>
-            <li><a href="http://geekli.st/volkan">Geek Me on <strong>geeklist</strong> &raquo;&raquo;</a></li>
             </ul>
         </nav>
     </article>
