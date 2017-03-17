@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
     <head>
@@ -6,15 +7,23 @@
 
         <title>Volkan Özçelik</title>
 
+        <meta http-equiv="Content-Security-Policy" content="
+            default-src 'self';
+            img-src * data:;
+            script-src 'self' 'unsafe-inline' www.google-analytics.com;
+            style-src 'unsafe-inline' volkan.io www.volkan.io cloud.webtype.com;
+            font-src 'self' cloud.webtype.com;
+        ">
+
         <meta name="description" content="About Volkan Özçelik; who I am and the cool stuff I do.">
         <meta name="keywords" content="Volkan, Volkan Özçelik, developer, public speaker, front end, back end,
             devops, full stack, performance nerd, scalability freak, JavaScript">
 
-        <link href="//cloud.webtype.com/css/1fa83ac3-90eb-426f-8d4c-496c082fce54.css" rel="stylesheet" type="text/css">
-
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+        <link href="//cloud.webtype.com/css/1fa83ac3-90eb-426f-8d4c-496c082fce54.css" rel="stylesheet" type="text/css">
 
         <style>
             body {
