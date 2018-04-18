@@ -1,16 +1,52 @@
 {
   "name": "volkan.io",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "volkan.io",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "lint-staged": {
+    "*.{js,json,css,sass,scss,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "files": [
+    "images/",
+    "buy-me-a-coffee/",
+    "index.html"
+  ],
   "repository": "git+https://github.com/v0lkan/volkan.io.git",
   "author": "Volkan Özçelik <me@volkan.io> (https://volkan.io/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/v0lkan/volkan.io/issues"
   },
-  "homepage": "https://github.com/v0lkan/volkan.io#readme"
+  "homepage": "https://github.com/v0lkan/volkan.io#readme",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.9.2"
+  },
+  "keywords": [
+    "byte",
+    "byte-sized javascript",
+    "byte-sized",
+    "bytesized.tv",
+    "demos",
+    "education",
+    "javascript",
+    "learning",
+    "podcast",
+    "react",
+    "redux",
+    "screencast",
+    "tutorials",
+    "vidcast",
+    "videocast",
+    "website",
+    "volkan-io",
+    "personal"
+  ]
 }

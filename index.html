@@ -23,14 +23,13 @@
         <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 
-        <link href="//cloud.webtype.com/css/1fa83ac3-90eb-426f-8d4c-496c082fce54.css" rel="stylesheet" type="text/css">
-
         <style>
             body {
-                font-family: "Georgia Pro", Georgia, serif;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                'Helvetica Neue', Arial, sans-serif;
                 line-height: 1.85em;
                 color: #000;
-                background: #F7FBFF url('images/assets/square_bg.png');
+                background: #f0f0f0;
                 /*
                 square_bg.png
                 bpattern.png
@@ -39,6 +38,13 @@
                 retina_wood.png
                 tileable-wood.png
                 */
+
+                font-weight: 200;
+                font-size: 18px;
+            }
+
+            b, strong {
+                font-weight: 500;
             }
 
             /*#Main {
@@ -46,29 +52,90 @@
             }*/
 
             h1, h2 {
-                font-family:"MVB Calliope", Georgia, serif;
-                font-size: 3.25em;
-                line-height: 1.2em;
-                letter-spacing:-0.025em;
-                font-weight:normal;
-                margin: 1em 0.3em 0.1em 0.8em;
-
-            }
-
-            h3 {
-                font-family:"MVB Calliope", Georgia, serif;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                'Helvetica Neue', Arial, sans-serif;
                 font-size: 2.25em;
                 line-height: 1.2em;
                 letter-spacing:-0.025em;
-                font-weight:normal;
+                margin: 1em 0.3em 0.1em 0.8em;
+                font-weight: 100;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            h1 {
+                text-align: center;
+                margin-top: -130px;
+                font-size: 62px;
+                font-weight: 600;
+                color: #ffffff;
+                letter-spacing: 1px;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+
+                font-weight: 100;
+                font-size: 48px;
+
+
+
+
+
+                color: rgba(0,0,0,.85);
+                text-shadow: 2px 4px 6px rgba(0,0,0,0.42);
+            }
+
+
+
+            .slogan {
+                text-align:center;color:#000000;padding-left:1em;
+                xfont-weight: 200;
+                font-style: normal;
+                -webkit-font-smoothing: subpixel-antialiased;
+                -moz-osx-font-smoothing: auto;
+                font-size: 20px;
+                position: relative;
+                left: 10px;
+                top: -5px;
+                opacity: 0.65;
+                color: #09528A;
+            }
+
+
+            h2 {
+                color: #D6A000;
+                opacity: 0.35;
+                transition: all 0.75s ease-in-out;
+                font-weight: 200;
+                font-style: italic;
+            }
+
+            article:hover h2 {
+                opacity: 1;
+            }
+
+            h1 strong {
+                font-weight: 200;
+                color: #434445;
+                transition: all 0.75s ease-in-out;
+            }
+
+
+
+            h3 {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                'Helvetica Neue', Arial, sans-serif;
+                font-size: 2.25em;
+                line-height: 1.2em;
+                letter-spacing:-0.025em;
+                font-weight: 100;
                 margin: 1em 0.3em 0.1em 0.8em;
                 text-align: center;
             }
 
             p {
-                font-size: 1.2em;
-                line-height: 1.75em;
-                margin: 0 1em 1.5em 2em;
+                font-size: 1em;
+                line-height: 1.55em;
+                margin: 0.4em 1em 0.8em 2em;
             }
 
             a {color: #003DF5;}
@@ -78,8 +145,8 @@
 
             blockquote {
                 font-style:italic;
-                border-left:2px #FFCC33 solid;
-                line-height:1.55em;padding-left:1em;
+                border-left:6px #FFCC33 solid;
+                line-height:1.55em;
                 font-size: 1em;
             }
 
@@ -89,7 +156,7 @@
 
             li, dt, dd {
                 display: block;
-                font-size: 1.2em;
+                font-size: 1em;
                 line-height: 1.25em;
                 margin: 0 0 1em 0;
             }
@@ -100,7 +167,7 @@
 
             dt {margin: 1em 0 0 0;}
             dd {
-                margin:0.5em 0 0 2em;
+                margin: 0.5em 0 0 1.2em;
                 font-style: italic;
                 font-size:1em;
                 line-height:1.8em;
@@ -169,11 +236,11 @@
 
                 background: #fff;
 
-                -webkit-transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);
-                -o-transform: matrix(1, -0.085, 0, 1, 0, 0) translate3d(0,0,1px);
-                -moz-transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);
-                -ms-transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);
-                transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);
+                /*-webkit-transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);*/
+                /*-o-transform: matrix(1, -0.085, 0, 1, 0, 0) translate3d(0,0,1px);*/
+                /*-moz-transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);*/
+                /*-ms-transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);*/
+                /*transform: matrix(1, -0.015, 0, 1, 0, 0) translate3d(0,0,1px);*/
             }
 
             .flex-item-main {
@@ -218,6 +285,84 @@
                     flex-basis: 98%;
                 }
             }
+
+            .quick-links {
+                display: flex;
+                margin: -10px auto;
+                align-items: center;
+                justify-content: space-around;
+                border-bottom: 1px #cccccc solid;
+                padding-left: 0;
+                box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.08);
+                background: #ffffff;
+                border-top: 1px #cccccc solid;
+                width: 102%;
+                left: -1%;
+                position: relative;
+                box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.08), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+            }
+
+            .quick-links li {
+                margin: 10px;
+                padding: 12px;
+                text-align: center;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            .quick-links li a {
+                text-decoration: none;
+                font-style: normal;
+                color: #666666;
+                transition: all 0.25s ease-in-out;
+                line-height: 1.5em;
+                padding: 10px;
+                background: #fcefc9;
+                min-width: 180px;
+                border-radius: 4px 16px 4px 10px;
+                cursor: default;
+
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .quick-links li a strong {
+                color: #666666 !important;
+                font-weight: 500;
+                transition: all 0.25s ease-in-out;
+            }
+
+            .quick-links li a:hover {
+                text-decoration: none;
+                color: #000000 !important;
+                background: #FFCC33;
+                opacity: 1;
+                border-radius: 16px 4px 10px 4px;
+            }
+
+            .quick-links li a:hover strong {
+                color: #000000 !important;
+            }
+
+
+            section {
+                clear: both;
+            }
+
+            aside {
+                transform: scale(0.62) translateY(-120px);
+            }
+
+            blockquote p {
+                margin-left: 1em;
+            }
+
+            ul {
+                margin-bottom: 0;
+            }
+
+
+
         </style>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -235,95 +380,84 @@
             <aside><img src="images/me.jpg" alt="Photo of Volkan Özçelik"
                 title="Volkan Özçelik"></aside>
 
-            <h1>Hi! I’m Volkan Özçelik</h1>
-            <p style="text-align:right;padding-right:2em;"><em><strong>breaker</strong>,
-            maker, nerd, coder, <strong>streamer</strong>, connector,
-            <strong>speaker</strong>, writer…<br>
-            <strong>JavaScript</strong>-lover, and <strong>performance</strong>
-            freak</em>.</p>
+            <h1>Volkan Özçelik</h1>
+            <p class="slogan">performance engineer, speaker, writer</p>
         </header>
 
         <section>
-            <h2>Quick Links</h2>
-
-            <ul>
-            <li><a href="https://o2js.com/interview-questions"><strong>Ace</strong> your
-            <strong>JavaScript Interviews</strong> (<em>ebook</em>) »»</a></li>
-            <li><a href="https://bytesized.tv/">Watch the <strong>Byte-Sized JavaScript</strong> screencast »»</a></li>
-            <li><a href="https://github.com/jsbites">Browse the source code of
-            <strong>Byte-Sized JavaScript</strong> »»</a></li>
-            <li><a href="https://speakerdeck.com/volkan">View the slide decks of my <strong>talks</strong> »»</a></li>
-            <li><a href="https://github.com/v0lkan/talks">Get the source code of my <strong>talks</strong> »»</a></li>
-            <li><a href="https://github.com/v0lkan">Check out my <strong>GitHub</strong> Profile »»</a></li>
-            <li><a href="https://linkedin.com/in/volkanozcelik">Get in touch with me on
-            <strong>LinkedIn</strong> »»</a></li>
-            <li><a href="http://twitter.com/linkibol">Follow me on <strong>Twitter</strong> »»</a></li>
+            <ul class="quick-links">
+            <li><a href="https://bytesized.tv/"><strong>My Screencasts</strong></a></li>
+            <li><a href="https://speakerdeck.com/volkan"><strong>My Talks</strong></a></li>
+            <li><a href="https://linkedin.com/in/volkanozcelik"><strong>Get
+                In Touch</strong> (<em>LinkedIn</em>)</a></li>
             </ul>
         </section>
 
         <section>
             <h2>About Me</h2>
 
-            <p>I’ve been in the industry <strong>since 2003</strong>;<br>
-            and this is the place where I brag about all the cool stuff I do.</p>
+            <p>Currently, I’m a <strong>Technical Lead</strong> at
+            <a href="http://cisco.com/"><strong>Cisco</strong></a>, focusing on
+            <strong>front-end performance</strong>.</p>
 
-            <p>So far, I’ve created mobile and web front-ends; played with
-            SQL/NoSQL data stores; created solutions to improve
-            <strong>scalability</strong> and <strong>performance</strong>
-            of both front end, and also back-end systems.</p>
+            <p>As an engineer, I solve <strong>problems</strong>: The context,
+            the origin, or the nature of the problems are
+            <strong>orthogonal</strong> to the approaches I take in solving them.</p>
 
-            <blockquote>
-            <p>Some call this being a “<em>fullstack developer</em>”, or
-            a “<em>unicorn developer</em>”.
-            And although I love unicorns, I don’t call myself as such:</p>
-
-                <blockquote>
-                    <p>I am an <strong>engineeer</strong> and I solve
-                    <strong>problems</strong>. The context
-                    and the location, the origin, or the nature of the problems are
-                    <strong>orthogonal</strong>
-                    to the approaches I take in solving them.</p>
-
-                    <p>It is <strong>curiosity</strong>, asking the right questions,
-                    forming <strong>ideas</strong>, refining those ideas based on
-                    <strong>measurements</strong> and <strong>evidence</strong>
-                    is what matters.</p>
-                </blockquote>
-
-                <p>I am <strong>curious</strong> and I choose and use the right
-                thing for the right job. — <strong>I use tools, not rules</strong> —
-                And every once in a while, I make my own tools. — That’s who I am
-                <strong>:)</strong>.
-            </blockquote>
+            <h2>My Passion</h2>
 
             <p>I believe in the <strong>beauty</strong> of <strong>simplicity</strong>
-            (<em>both in code and also in design</em>); and I am a
-            <strong>performance</strong> enthusiast: My passion is to create
+                (<em>both in code and also in design</em>).</p>
+
+            <p>I am a <strong>performance</strong> enthusiast.</p>
+
+            <blockquote>
+            <p>My passion is to create
             <strong>fast</strong>, <strong>responsive</strong>,
             <strong>intuitive</strong> interfaces, tools, and applications
             that millions love and use.</p>
-
-            <blockquote>
-            <p>While doing all these, I love to write amazingly well-organized
-            <strong>JavaScript</strong> code.</p>
             </blockquote>
 
-            <p>Currently, I’m a <strong>Technical Lead</strong> at
-            <a href="http://cisco.com/">Cisco</a>;<br>
-            I live in the lovely <strong>Mountain View, CA</strong>;
-            I work at <strong>San Francisco</strong>.</p>
-        </section>
 
-        <section>
-            <h2>I Cast</h2>
+            <p>While doing all these, I love to write an amazingly well-organized
+            <strong>JavaScript</strong> too.</p>
 
-            <p>I monthly publish <a href="https://bytesized.tv"><strong>Byte-Sized JavaScript</strong></a>:<br>
-            a short (<em>five-to-ten minuntes per episode</em>), yet information-packed,<br>
-            screencast about <strong>JavaScript</strong> and <strong>related technologies</strong>.</p>
+            <h2>Always Curious</h2>
+
+            <p>It’s <strong>curiosity</strong> that matters. Or, asking the right
+            questions, forming <strong>ideas</strong>, refining those ideas based on
+            <strong>measurements</strong> and <strong>evidence</strong>.</p>
+
+            <blockquote>
+            <p>The solution is just a <strong>side effect</strong> of
+            <strong>curiosity</strong>.</p></blockquote>
+
+            <p>So far, I’ve created mobile and web front-ends; built desktop and mobile
+            apps; played with  SQL/NoSQL/GraphQL data stores; <strong>automated</strong>
+            the deployment of <strong>microservices</strong>, played with
+            <strong>serverless</strong> applications, used <strong>real-time</strong>
+            databases, streams, <strong>websockets</strong>, protocol buffers,
+            <strong>lambda functions</strong> and <strong>message queues</strong>,
+            crafted solutions to improve <strong>scalability</strong> and
+            <strong>performance</strong> of both front end, and also back-end systems…</p>
+
+            <blockquote>
+            <p>Some call this being a “<em>full stack developer</em>”, or
+            a “<em>unicorn developer</em>”.<br>
+            <strong>I love unicorns</strong>: Yet, don’t call myself as such.</p>
+            </blockquote>
         </section>
 
         <section>
             <h2>I Talk</h2>
+
+            <blockquote>
+            <p><strong>Psst…</strong> If you want me to talk in your tech event
+            <a href="mailto:volkan@o2js.com">just shoot me an email</a>.<br>
+            I’m highly motivated and I’d <strong>love</strong> to be there
+            if my time permits.
+            </p>
+            </blockquote>
 
             <p>I love to talk about…</p>
 
@@ -333,179 +467,80 @@
             <li>And <strong>JavaScript</strong>!</li>
             </ul>
 
-            <p>If you are interested <a href="mailto:volkan@o2js.com">just shoot me an email</a>.<br>
-            I am highly motivated:<br>
-            I can talk for three slices of pizza, and some beer <strong>;)</strong>.</p>
-        </section>
-
-        <section>
-            <h2>My Talks</h2>
-
-            <!--h3>Coming Up Next…</h3>
-            <p></p-->
-
-            <!--h3>Current Talk</h3>
             <dl>
-            </dl>
-            <p>I’d love to chat with you if you happen to be there.</p-->
-
-            <p>Here are some of the talks I’ve given so far:</p>
-
-            <dl>
-            <dt><a href="https://speakerdeck.com/volkan/scaling-your-node-dot-js-api-like-a-boss"
-            ><strong>Scaling</strong> Your <strong>Node.JS</strong> API Like a Boss &raquo;&raquo;</a></dt>
-            <dd>You would not want your service to be unusable at precisely the wrong time<br>
-                — while everyone is watching — would you? <strong>;)</strong><br>
-            Then <a href="https://www.youtube.com/playlist?list=PLq0_AbMvuYAkiCKRI3JhWq56r90pR3k-p"
-            >watch a video recording of my talk O’Reilly Fluent Conf talk</a><br>
-            on <strong>Node.JS</strong>, <strong>performance</strong>,
-            <strong>scalability</strong>, <strong>complexity</strong>
-            and <strong>consistency</strong>.<br>
-            <a href="http://conferences.oreilly.com/fluent/javascript-html-us/public/schedule/detail/46028"
-            >Here’s the talk’s official page</a> that gives some additional information.<br>
-            You can also <a
-            href="https://github.com/v0lkan/talks/tree/master/fluentconf"
-            >download the accompanying <strong>source code</strong></a>, if you like.</dd>
-
-            <dt><a href="https://speakerdeck.com/volkan/the-secrets-of-high-performance-mobile-javascript-applications"
+            <dt>Here are some of the talks I’ve given so far:</dt>
+            <dd><a href="https://speakerdeck.com/volkan/scaling-your-node-dot-js-api-like-a-boss"
+            ><strong>Scaling</strong> Your <strong>Node.JS</strong> API Like a Boss</a></dd>
+            <dd><a href="https://speakerdeck.com/volkan/the-secrets-of-high-performance-mobile-javascript-applications"
             >The Secrets of <strong>High Performance</strong> Mobile
             <strong>JavaScript</strong> Applications
-            &raquo;&raquo;</a></dt>
-            <dd>Learn the rules like a pro, so that you can break them like an
-            artist <strong>;)</strong><br>
-            My talk on <strong>mobile performance</strong> at <a
-            href="http://html5devconf.com"><strong>#html5devconf</strong>
-            2014</a>.<br>
-            You may want to
-            <a href="https://thenewcircle.com/s/post/1658/the_secrets_of_high_performance_mobile_javascript_applications"
-            >watch a more recent talk of mine</a> on the same topic<br>
-            /~from <em><a
-            href="http://forwardjs.com"><strong>#forwardjs</strong>
-            2014</a></em>/;<br>
-            You can also <a
-            href="https://github.com/v0lkan/talks/tree/master/html5devconf"
-            >download the accompanying <strong>source code</strong></a>.</dd>
-
-            <dt><a
+            </a></dd>
+            <dd><a
             href="https://speakerdeck.com/volkan/the-modern-hackers-guide-to-the-universe"
-            >The Modern Hacker&#39;s Guide to The Universe &raquo;&raquo;</a></dt>
-            <dd>Talked about a practical approach to surviving a
-            <strong>hackathon</strong> at <a
-            href="http://hack4good.io"><strong>#hack4good</strong> 0.5</a>.</dd>
-            <dt><a
+            >The Modern Hacker’s Guide to The Universe</a></dd>
+            <dd><a
             href="https://speakerdeck.com/volkan/mobile-application-performance-
-            tips">Mobile Application Performance Tips »»</a></dt>
-            <dd>A talk that I gave at <a href="http://hack4good.io/">#hack4good
-            0.2</a>.</dd>
-
-            <dt><a
+            tips">Mobile Application <strong>Performance</strong> Tips</a></dd>
+            <dd><a
             href="https://speakerdeck.com/volkan/efficient-javascript">Efficient
-            JavaScript @udemy »»</a></dt>
-            <dd>A 3-hour <strong>workshop</strong> that I’ve given to
-            <strong><a href="http://udemy.com>">udemy</a></strong>
-            engineers;<br>
-            <a href="https://github.com/v0lkan/talks/tree/master/udemy">download
-            the accompanying <strong>source code</strong> from
-            <strong>GitHub</strong></a>.</dd>
-
-            <dt><a
-            href="http://o2js.com/J1V3R0Ckz/efficient-javascript/index.html"
-            >Efficient JavaScript @jive »»</a></dt>
-            <dd>A condensed version of the above, presented at
-            <strong><a href="http://jivesoftware.com/">Jive
-            Software</a></strong> HQ.</dd>
-
-            <dt><a
+            <strong>JavaScript</strong></a></dd>
+            <dd><a
             href="https://speakerdeck.com/volkan/javascript-widget-development-best-practices"
-            >JavaScript Widget Development Best Practices
-            &raquo;&raquo;</a></dt>
-            <dd>A conference about widget development that I’ve given at
-            <strong><a href="http://jstanbul.org/2012/">JStanbul
-            2012</a></strong>.</dd>
-
+            ><strong>JavaScript</strong> Widget Development Best Practices</a></dd>
             </dl>
         </section>
 
         <section>
             <h2>I Write</h2>
 
-            <!--h3>JavaScript on the Edge</h3>
-
-            <p>I recently started <a
-            href="https://leanpub.com/js-next"
-            >writing a brand new book about <strong>JavaScript</strong> on the
-            edge</a>. It’s about all the cool things that are coming up next in
-            <strong>JavaScript</strong>. It’s a work in progress, <a
-            href="https://leanpub.com/js-next"
-            >you can register here to get notified when it is published</a>.</p-->
-
-            <h3>JavaScript Interview Questions</h3>
-
-            <p><br>I have a book about <strong><a
+            <p>I have a book about <strong><a
             href="https://o2js.com/interview-questions">JavaScript Interview
-            Questions</a></strong>;
-            and here is its story:</p>
+            Questions</a></strong>. Also, I’ve done technical editing for books
+                and I’ve written blog posts and technical articles in various mediums.</p>
 
-            <blockquote>In the last couple of years I have been to at least a
-            hundred technical
-            interviews on <strong>JavaScript Engineering</strong>,
-            <strong>Front-End Development</strong>, and related positions.
-            So, rather than giving some HR Manager’s perspective on what
-            interviews should look like, I wanted to hand over the reader the
-            <strong>red pill</strong>
-            and tell what the <strong>JavaScript Engineering</strong> interviews
-            <strong>really are</strong>.
-            </blockquote>
+            <p>That said, nowadays I’m more into
+            <a href="https://bytesized.tv">screencasting</a>.</p>
 
-            <ul class="pushdown" style="margin-bottom:1.5em">
-            <li><a href="https://o2js.com/interview-questions/">learn more about
-            my journey &raquo;&raquo;</a></li>
-            </ul>
+            <p>Why? — Because, I feel like times have changed, and we’ve started to
+            prefer to consume audiovisual content to reading books.</p>
 
-            <p>Nowadays, I am more into <strong><a href="https://bytesized.tv/"
-            >videocasting</a></strong>.</p>
-
-            <blockquote>I feel like times have changed, and we’ve started to
-            prefer to consume audiovisual content to reading books. —
-            I find this, kind of, <em>sad</em>; yet, it’s a side effect
-            of our progressive evolution. — Maybe books will become more
+            <p>I find this trend towards preferring audiovisual content to books <em>sad</em>.
+            Yet, we can only embrace it, as it’s a side effect
+            of our progressive evolution. Maybe books will become more
             <strong>visual</strong>, and more <strong>interactive</strong>
-            in the near future; who knows.
-            <br><br>
-            To adapt this change, the majority of my
-            “<em>writing time</em>”<br>
+            in the near future; who knows.</p>
+        </section>
+        <section>
+            <h2>I Cast</h2>
+
+            <p>So, the majority of my
+            “<em>writing time</em>” now
             <a href="https://bytesized.tv/"
-            >now goes to <strong>videocasting</strong> &raquo;&raquo;</a>.<br>
-            </blockquote>
+            > goes to <strong>screencasting</strong></a>.<br>
 
-            <p>Additionally, I’ve done technical editing for a bunch
-            of books; published articles; and I’ve written guest blog posts and
-            articles in various mediums.</p>
 
-            <!--p>I also have a mostly <strong>JavaScript</strong>-related
-            technical blog <a
-            href="http://o2js.com"><strong>o2js.com</strong></a> that I
-            regularly update.</p-->
 
-            <!--ul class="pushdown" >
-            <li><a href="http://o2js.com/">read my blog &raquo;&raquo;</a></li>
-            </ul-->
+            <p><a href="https://bytesized.tv"><strong>Byte-Sized JavaScript</strong>
+            is my monthly <strong>screencast</strong></a>: It is a short
+            (<em>five-to-ten minuntes per episode</em>), <strong>condensed</strong>
+            <em>cast</em> about <strong>JavaScript</strong>, <strong>performance</strong>,
+            <strong>scalability</strong>, <strong>automation</strong> and
+            <strong>related technologies</strong>.</p>
          </section>
 
          <section>
             <h2>I {[Code]}</h2>
 
-            <p><br>Oh, by the way, I am a relentless <strong>side projector</strong>.</p>
+            <p>Oh, by the way, I am a relentless <strong>side projector</strong>.</p>
 
             <p>Most of my side projects are <strong>open source</strong><br>
             and I maintain them either <a href="https://github.com/v0lkan">under
             my personal <strong>GitHub</strong> account</a>,<br>
             or <a href="https://github.com/orgs/jsbites/">under the
             <strong>Byte-Sized JavaScript</strong> organization’s GitHub account</a>.</p>
-
-            <p>If you want to contribute or share your comments and suggestions,<br>
-            you are more than welcome to do so.</p>
         </section>
+
+        <p>&nbsp;</p>
     </article>
     <footer>
     </footer>
