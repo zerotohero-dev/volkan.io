@@ -61,8 +61,8 @@ devops, full stack, performance nerd, scalability freak, JavaScript">
     }
 
     h2 {
-      color: #D6A000;
-      opacity: 0.35;
+      color: #000000;
+      opacity: 0.99;
       transition: all 0.75s ease-in-out;
       font-weight: 200;
       font-style: italic;
@@ -286,35 +286,41 @@ devops, full stack, performance nerd, scalability freak, JavaScript">
     .quick-links li a {
       text-decoration: none;
       font-style: normal;
-      color: #666666;
       transition: all 0.25s ease-in-out;
       line-height: 1.5em;
       padding: 10px;
-      background: #fcefc9;
       min-width: 180px;
-      border-radius: 4px 16px 4px 10px;
       cursor: default;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-shadow: 2px 2px 14px rgba(255, 204, 51, 0.36),
       -2px -2px 14px rgba(255, 204, 51, 0.36);
       border-bottom: 1px #f9e29e solid;
-    }
 
-    .quick-links li a strong {
-      color: #666666 !important;
-      font-weight: 500;
-      transition: all 0.25s ease-in-out;
-    }
-
-    .quick-links li a:hover {
-      text-decoration: none;
       color: #000000 !important;
       background: #FFCC33;
       opacity: 1;
       border-radius: 16px 4px 10px 4px;
       border-bottom: 1px #FFCC33 solid;
+    }
+
+    .quick-links li a strong {
+      color: #000000 !important;
+      font-weight: 500;
+      padding-left: 1rem; padding-right: 1rem;
+      padding-top: 0.2rem; padding-bottom: 0.2rem;
+      transition: all 0.25s ease-in-out;
+    }
+
+    .quick-links li a:hover {
+      text-decoration: none;
+      opacity: 1;
+      border-bottom: 1px #FFCC33 solid;
       box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.45);
+      color: #666666;
+      background: #fcefc9;
+      border-radius: 4px 16px 4px 10px;
+      cursor: pointer;
     }
 
     .quick-links li a:hover strong {
