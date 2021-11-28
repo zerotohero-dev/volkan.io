@@ -1,0 +1,577 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Volkan Özçelik</title>
+  <meta http-equiv="Content-Security-Policy" content="
+default-src 'self';
+img-src * data:;
+script-src 'self' 'unsafe-inline' www.google-analytics.com;
+style-src 'unsafe-inline' volkan.io www.volkan.io cloud.webtype.com;
+font-src 'self' cloud.webtype.com;
+">
+  <meta name="description" content="About Volkan Özçelik; who I am and the cool stuff I do.">
+  <meta name="keywords" content="Volkan, Volkan Özçelik, developer, public speaker, front end, back end,
+devops, full stack, performance nerd, scalability freak, JavaScript">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.85em;
+      color: #000;
+      background: #f0f0f0;
+      font-weight: 200;
+      font-size: 18px;
+    }
+
+    b,
+    strong {
+      font-weight: 500;
+    }
+
+    h1,
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.2em;
+      margin: 1em 0.3em 0.1em 0.8em;
+      font-weight: 100;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: -130px;
+      letter-spacing: 1px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-weight: 100;
+      font-size: 48px;
+      width: 100%;
+      margin-left: 0;
+      color: rgba(0, 0, 0, .85);
+      text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.42);
+    }
+
+    h2 {
+      color: #D6A000;
+      opacity: 0.35;
+      transition: all 0.75s ease-in-out;
+      font-weight: 200;
+      font-style: italic;
+      margin-bottom: 0.32em;
+    }
+
+    article:hover h2 {
+      opacity: 1;
+    }
+
+    h1 strong {
+      font-weight: 200;
+      color: #434445;
+      transition: all 0.75s ease-in-out;
+    }
+
+    h3 {
+      font-size: 2.25em;
+      line-height: 1.2em;
+      letter-spacing: -0.025em;
+      font-weight: 100;
+      margin: 1em 0.3em 0.1em 0.8em;
+      text-align: center;
+    }
+
+    .slogan {
+      text-align: center;
+      padding-left: 1em;
+      font-style: normal;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+      font-size: 20px;
+      position: relative;
+      top: -5px;
+      left: -7px;
+      opacity: 0.85;
+      color: #000000;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.55em;
+      margin: 0.4em 1em 0.8em 2em;
+    }
+
+    a {
+      color: #000000;
+      transition: all 0.25s ease-in-out;
+      padding: 6px 4px 2px 4px;
+      text-decoration: none;
+      border-bottom: 2px #FFCC33 solid;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    a strong {
+      color: #000000;
+      transition: all 0.25s ease-in-out;
+    }
+
+    a:hover,
+    a:hover strong {
+      background: #FFCC33;
+      color: #000000 !important;
+    }
+
+    a:hover {
+      border-bottom: 2px #FFCC33 solid;
+    }
+
+    blockquote {
+      font-style: italic;
+      border-left: 6px #FFCC33 solid;
+      line-height: 1.55em;
+      font-size: 1em;
+    }
+
+    ul,
+    dl {
+      margin: 0 0 2.5em 2em;
+    }
+
+    li,
+    dt,
+    dd {
+      display: block;
+      font-size: 1em;
+      line-height: 1.25em;
+      margin: 0 0 1em 0;
+    }
+
+    li a,
+    dt a {
+      display: block;
+    }
+
+    dt {
+      margin: 1em 0 0 0;
+    }
+
+    dd {
+      margin: 0.5em 0 0 1.2em;
+      font-style: italic;
+      font-size: 1em;
+      line-height: 1.8em;
+    }
+
+    aside {
+      width: 19.5em;
+      height: 19.5em;
+      margin: 0 auto;
+      border-radius: 50%;
+      overflow: hidden;
+      display: block;
+      -webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.58);
+      -moz-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.58);
+      box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.58);
+      border: 1px #999999 solid;
+    }
+
+    aside {
+      margin: -1em auto -2em;
+    }
+
+    aside img {
+      display: block;
+      width: 100%;
+    }
+
+    header p {
+      margin: 0.1em 0 2em 0;
+      font-size: 1.2em;
+    }
+
+    .flex-container {
+      display: -webkit-flex;
+      display: flex;
+
+      -webkit-flex-direction: row;
+      flex-direction: row;
+
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+      -webkit-justify-content: center;
+      justify-content: center;
+
+      -webkit-align-content: flex-start;
+      align-content: flex-start;
+
+      -webkit-align-items: stretch;
+      align-items: stretch;
+    }
+
+    .flex-item-main {
+      margin-top: 2em;
+      margin-bottom: 6em;
+
+      -webkit-flex-grow: 1;
+      flex-grow: 1;
+
+      -webkit-flex-shrink: 0;
+      flex-shrink: 0;
+
+      -webkit-flex-basis: 750px;
+      flex-basis: 750px;
+
+      max-width: 750px;
+
+      background: #fff;
+    }
+
+    .flex-item-main {
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+    }
+
+    @media (max-width: 800px) {
+      body {
+        margin: 0;
+      }
+
+      .flex-container {
+        -webkit-align-contents: column;
+        align-contents: column;
+      }
+
+      .flex-item-main {
+        -webkit-flex-basis: 98%;
+        flex-basis: 98%;
+
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    .quick-links {
+      display: flex;
+      margin: -10px auto;
+      align-items: center;
+      justify-content: space-around;
+      border-bottom: 1px #cccccc solid;
+      padding-left: 0;
+      background: #ffffff;
+      border-top: 1px #cccccc solid;
+      width: 102%;
+      left: -1%;
+      position: relative;
+      box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.08), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+    }
+
+    .quick-links li {
+      padding: 12px;
+      text-align: center;
+      margin: 5px 10px;
+    }
+
+    .quick-links li a {
+      text-decoration: none;
+      font-style: normal;
+      color: #666666;
+      transition: all 0.25s ease-in-out;
+      line-height: 1.5em;
+      padding: 10px;
+      background: #fcefc9;
+      min-width: 180px;
+      border-radius: 4px 16px 4px 10px;
+      cursor: default;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-shadow: 2px 2px 14px rgba(255, 204, 51, 0.36),
+      -2px -2px 14px rgba(255, 204, 51, 0.36);
+      border-bottom: 1px #f9e29e solid;
+    }
+
+    .quick-links li a strong {
+      color: #666666 !important;
+      font-weight: 500;
+      transition: all 0.25s ease-in-out;
+    }
+
+    .quick-links li a:hover {
+      text-decoration: none;
+      color: #000000 !important;
+      background: #FFCC33;
+      opacity: 1;
+      border-radius: 16px 4px 10px 4px;
+      border-bottom: 1px #FFCC33 solid;
+      box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.45);
+    }
+
+    .quick-links li a:hover strong {
+      color: #000000 !important;
+    }
+
+    section {
+      clear: both;
+    }
+
+    aside {
+      transform: scale(0.62) translateY(-120px);
+    }
+
+    blockquote p {
+      margin-left: 1em;
+    }
+
+    ul {
+      margin-bottom: 0;
+    }
+
+    #z2hjs {
+      transition: all 0.75s ease-in-out;
+      border: 1px #f0f0f0 solid;
+    }
+
+        #z2hjs a {
+          transition: all 0.75s ease-in-out;
+        }
+
+    #z2hjs:hover a {
+      background: #FFCC33;
+    }
+
+    #z2hjs a em {
+      transition: all 0.75s ease-in-out;
+      color: #997200;
+    }
+
+    #z2hjs:hover a em {
+      color: #600164;
+    }
+
+    .over {
+      background: #ffffff;
+      border: 1px #cccccc solid !important;
+      border-radius: 4px 4px 4px 4px;
+      box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.45);
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-56512-13', 'volkan.io');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+  <div class="to-zero-to-hero" id="z2hjs" style="width:750px;margin: 0 auto;margin-top:30px;margin-bottom:10px;">
+    <p style="line-height:2.4em;text-align:center;width: 750px;margin: 0 auto;margin-bottom:10px;margin-top:10px;">
+      <strong style="font-size:1.4em; font-weight: 100;">Who Else Wants to See me Breaking Production Online?</strong>
+      <br>
+      <a href="https://zerotoherojs.com/">Don’t miss out the
+        <strong>ZeroToHero</strong> Live <strong>Twitch</strong> Streams</a>.
+      <br> …👆 It’s so much fun. Come, join me.
+    </p>
+  </div>
+  <script>
+    (function() {
+      const div = document.getElementById('z2hjs');
+      div.addEventListener('mouseover', function(evt) {
+        div.classList.add('over');
+      });
+      div.addEventListener('moseout', function(evt) {
+        div.classList.remove('over');
+      });
+
+      div.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location.href = 'https://zerotoherojs.com/';
+      });
+    }());
+  </script>
+  <div class="flex-container">
+    <article id="Main" class="flex-item-main">
+      <header>
+        <aside>
+          <img src="images/me.jpg" alt="Photo of Volkan Özçelik" title="Volkan Özçelik">
+        </aside>
+        <h1>Volkan Özçelik</h1>
+        <p class="slogan">developer, connector, streamer, speaker, writer</p>
+      </header>
+
+      <section>
+        <ul class="quick-links">
+          <li>
+            <a href="https://twitch.tv/ZeroToHeroDev">
+              <strong>Follow Me</strong><br>
+              <em>twitch</em></a>
+          </li>
+
+          <li>
+            <a href="https://linkedin.com/in/volkanozcelik">
+              <strong>Get In Touch</strong><br>
+              <em>LinkedIn</em></a>
+          </li>
+
+
+          <li>
+            <a href="https://github.com/zerotohero-dev">
+              <strong>Use the Source</strong><br>
+              <em>GitHub</em></a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>About Me</h2>
+
+        <p>Currently, I’m a
+          <strong>Technical Lead</strong> at
+          <a href="http://cisco.com/">
+            <strong>Cisco</strong>
+          </a>, improving
+          <strong>performance</strong> across the fabric.</p>
+
+        <p>As an engineer, I solve
+          <strong>problems</strong>: The context, the origin, or the nature of the problems
+          are
+          <strong>orthogonal</strong> to the approaches I take in solving them.</p>
+
+        <h2>My Passion</h2>
+
+        <p>I believe in the
+          <strong>beauty</strong> of
+          <strong>simplicity</strong>
+          (
+          <em>both in code and also in design</em>).</p>
+
+        <blockquote>
+          <p>My passion is to create
+            <strong>fast</strong>,
+            <strong>responsive</strong>,
+            <strong>intuitive</strong> interfaces, tools, and applications that millions
+            love and use.</p>
+        </blockquote>
+
+        <p>It’s the
+          <strong>curiosity</strong> that matters. Or asking the right questions, forming
+          <strong>ideas</strong>, refining those ideas based on
+          <strong>measurements</strong> and
+          <strong>evidence</strong>.</p>
+
+        <blockquote>
+          <p>The solution is a
+            <strong>side effect</strong> of
+            <strong>curiosity</strong>.</p>
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>I Stream</h2>
+
+        <p>Nowadays, I’m
+          <a href="https://twitch.tv/ZeroToHeroDev"><strong>breaking production</strong>
+            on live streams for the entire world to see</a>.</p>
+
+        <p>Come, join me. It’s so much fun 😁.</p>
+      </section>
+
+      <section>
+        <h2>I Talk</h2>
+
+        <p>When I talk, I love to talk about…</p>
+
+        <ul>
+          <li>
+            <strong>Performance</strong> Engineering;</li>
+          <li>Widgets, APIs,
+            <strong>Microservices</strong>;</li>
+          <li>And
+            <strong>Serverless Architectures</strong>.</li>
+        </ul>
+
+        <blockquote>
+          <p>Public speaking is the most <strong>awesome</strong> and the most
+            <strong>terrifying</strong> experience that you’ll live simultaneously.
+            Everyone must do it at least once in their life.</p>
+        </blockquote>
+
+        <dl>
+          <dt>Here are some of the talks I’ve given so far:</dt>
+          <dd>
+            <a href="https://speakerdeck.com/volkan/scaling-your-node-dot-js-api-like-a-boss">
+              <strong>Scaling</strong> Your
+              <strong>Node.JS</strong> API Like a Boss</a>
+          </dd>
+          <dd>
+            <a href="https://speakerdeck.com/volkan/the-secrets-of-high-performance-mobile-javascript-applications">The Secrets of
+              <strong>High-Performance</strong> Mobile
+              Applications
+            </a>
+          </dd>
+          <dd>
+            <a href="https://speakerdeck.com/volkan/the-modern-hackers-guide-to-the-universe">The Modern <strong>Hacker</strong>’s Guide to The Universe</a>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>I Hack</h2>
+
+        <p>I like tinkering with systems, and I’m not afraid to break stuff.</p>
+
+        <p><strong>Since 2003</strong>, I have been all over the stack, as far as stack goes.</p>
+
+        <blockquote>
+        <p>I find gaps in <strong>software architectures</strong>, business workflows,
+          and <strong>organizational structures</strong>—optimizing them to become
+          <a href="https://www.youtube.com/watch?v=gAjR4_CbPpQ">better, faster, stronger</a>.</p>
+        </blockquote>
+
+        <p>I’ve created <strong>mobile</strong> and <strong>web</strong> front-ends,
+        built desktop and mobile <strong>apps</strong>, played with <strong>SQL/NoSQL/GraphQL</strong>
+        data stores, and more.</p>
+
+        <p>I’ve automated the deployment of <strong>microservices</strong>, played with
+          <strong>serverless</strong> architectures, Kubernetes, and its friends,
+          such as <strong>istio</strong>.</p>
+
+        <p>I’ve  used <strong>real-time</strong> databases, streams,
+          <strong>WebSockets</strong>, protocol buffers, <strong>lambda functions</strong>,
+          and <strong>message queues</strong>.</p>
+
+        <p>I’ve crafted solutions to improve the
+          <strong>scalability</strong> and <strong>performance</strong> of
+          both front-end, and also back-end systems.</p>
+
+        <p>I’m pretty sure there’s much more to add to the list that I don’t
+        remember right now.</p>
+
+        <p style="border-top: 6px #FFCC33 solid;padding-top:1em;margin-top:2em;text-align:center">
+          That’s me in a nutshell: I’m a curious and pragmatist nerd
+          who likes to get 💩 done.</p>
+      </section>
+      <p>&nbsp;</p>
+    </article>
+    <footer>
+    </footer>
+  </div>
+</body>
+
+</html>
