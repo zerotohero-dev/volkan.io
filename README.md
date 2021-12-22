@@ -9,3 +9,13 @@
 ```
 
 The source Code for [volkan.io](https://volkan.io/).
+
+## License
+
+[MIT-Licensed](LICENSE)
+
+Feel free to use the source code as you see fit.
+
+Obviously, don’t copy everything verbatim and impersonate me :)
+
+When in doubt [send me an email at me@volkan.io](mailto:me@volkan.io).
