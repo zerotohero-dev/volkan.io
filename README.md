@@ -18,5 +18,4 @@ Feel free to use the source code as you see fit.
 
 Obviously, don’t copy everything verbatim and impersonate me :)
 
-When in doubt about how you can use the code in here, or 
-whehter you particular usage is allowed [send me an email at me@volkan.io](mailto:me@volkan.io).
+When in doubt about whehter your particular usage is okay [send me an email at me@volkan.io](mailto:me@volkan.io).
